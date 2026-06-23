@@ -1,6 +1,14 @@
-let mySprite: Sprite = null
-music.play(music.createSoundEffect(WaveShape.Sawtooth, 5000, 1, 145, 41, 510, SoundExpressionEffect.None, InterpolationCurve.Logarithmic), music.PlaybackMode.UntilDone)
-scene.setBackgroundImage(img`
+mySprite: Sprite = None
+music.play(music.create_sound_effect(WaveShape.SAWTOOTH,
+        5000,
+        1,
+        145,
+        41,
+        510,
+        SoundExpressionEffect.NONE,
+        InterpolationCurve.LOGARITHMIC),
+    music.PlaybackMode.UNTIL_DONE)
+scene.set_background_image(img("""
     eeeee2222222222222222222222222222222222ee2222ee2222ee2222222eeeee2222222222222222222222222222222222ee22222eeee222ee2eeeee2222222222222222222222222222222222ee222
     222eeeee22222222222222222222222222222eee2222eeee2222ee222222222eeeee22222222222222222222222222222eee2222eeeee222ee22222eeeee22222222222222222222222222222eee2222
     222222eeeeeee222222222222222222222eeee22222eeeeee2222eee2222222222eeeeeee222222222222222222222eeee22222eeee2222ee222222222eeeeeee222222222222222222222eeee22222e
@@ -121,10 +129,10 @@ scene.setBackgroundImage(img`
     222222e2eeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeeeee2e222222
     222222e2ebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbe2e222222
     222222eeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeee222222
-    `)
-controller.moveSprite(mySprite, 100, 100)
-controller.moveSprite(mySprite)
+    """))
+controller.move_sprite(mySprite, 100, 100)
+controller.move_sprite(mySprite)
 game.splash("Hi, world")
 game.splash("How are you?")
 game.splash("This is my 1st code")
-info.changeScoreBy(10)
+info.change_score_by(10)
